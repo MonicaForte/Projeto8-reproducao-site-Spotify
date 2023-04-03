@@ -1,0 +1,181 @@
+/* Customizações gerais */
+*/{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+html, body{
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body{
+    background: url(../imagens/capa.png),
+				url(../imagens/ruido.png),
+				linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+}
+
+/* Navegação */
+nav li a{
+    color: white;
+}
+nav li a:hover{
+    color: rgb(113, 212, 212);
+}
+
+.navbar-transparente{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+.item{
+    padding-top: 180px;
+    text-align: center;
+    height: 700px;
+}
+
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.btn-roxo{
+    background-color: #7c25f8;
+}
+
+.btn-roxo:hover {
+	background: #6207e3;
+	color: white;
+}
+
+.btn-branco{
+    border: 2px solid white;
+}
+
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
+
+/* Tipografia */
+h1{
+    color: white;
+    font-weight: bold;
+}
+
+h2{
+    color: #7c25f8;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+h3{
+    color: #7c25f8;
+    font-weight: bold;
+}
+
+h4{
+    color: white;
+    font-size: 3em;
+}
+
+h5{
+    color: rgb(113, 212, 212);
+    font-size: 2em;
+}
+
+h6{
+    text-transform: uppercase;
+    color: grey;
+    font-size: 0.8em;
+}
+
+.p-branco{
+    color: white;
+}
+
+/* Customização imagem container 3, coluna 2 */
+.img-rotacao{
+    transform: rotate(28deg);
+    -moz-transform: rotate(28deg);
+    -webkit-transform:rotate(28deg);
+    position: relative;
+    right: -45px;
+}
+
+/* Rodapé */
+footer{
+    background: black;
+    padding-top: 40px;
+    position: relative;
+}
+
+.rodape ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.rodape ul li a:hover{
+    color: rgb(113, 212, 212);
+}
+
+.icones{
+    display: flex;
+    list-style: none;
+}
+  
+
+/* Media Queries */
+@media (max-width: 575.98px) {
+    h1{
+        font-size: 3em;
+    }
+    .btn-custom {
+		margin: 10px 15px;	
+	}
+    
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h1{
+        font-size: 3em;
+    }
+    .btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1{
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1{
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1{
+        font-size: 6em;
+    }
+}
+/* ******* */
