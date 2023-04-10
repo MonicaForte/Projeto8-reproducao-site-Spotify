@@ -1,3 +1,15 @@
+:root{
+    --color-transparent: rgba(0, 0, 0, 0.6);
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-grey: #808080; 
+    --color-softBlue: #71d4d4;
+    --color-linear-gradient: #ff4169;
+    --color-linear-gradient-2: #7c26f8;
+    --color-btn-roxo: #7c25f8;
+    --color-btn-roxo-2: #6207e3;
+}
+
 /* Customizações gerais */
 */{
     padding: 0;
@@ -14,25 +26,25 @@ html, body{
 body{
     background: url(../imagens/capa.png),
 				url(../imagens/ruido.png),
-				linear-gradient(50deg,#ff4169,#7c26f8);
+				linear-gradient(50deg, var(--color-linear-gradient), var(--color-linear-gradient-2));
 	background-attachment: fixed;
 }
 
 /* Navegação */
 nav li a{
-    color: white;
+    color: var(--color-white);
 }
 nav li a:hover{
-    color: rgb(113, 212, 212);
+    color: var(--color-softBlue);
 }
 
 .navbar-transparente{
-    background: rgba(0, 0, 0, 0.6);
+    background: var(--color-transparent);
 }
 
 .divisor {
 	width: 1px;
-	background: white;
+	background: var(--color-white);
 	margin: 12px 15px;
 }
 
@@ -47,7 +59,7 @@ nav li a:hover{
 }
 
 .btn-custom{
-    color: white;
+    color: var(--color-white);
     border-radius: 500px;
     -webkit-border-radius: 500px;
     -moz-border-radius: 500px;
@@ -57,21 +69,21 @@ nav li a:hover{
 }
 
 .btn-roxo{
-    background-color: #7c25f8;
+    background-color: var(--color-btn-roxo);
 }
 
 .btn-roxo:hover {
-	background: #6207e3;
-	color: white;
+	background: var(--color-btn-roxo-2);
+	color: var(--color-white);
 }
 
 .btn-branco{
-    border: 2px solid white;
+    border: 2px solid var(--color-white);
 }
 
 .btn-branco:hover {
-	background-color: white;
-	color: black;
+	background-color: var(--color-white);
+	color: var(--color-black);
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -79,41 +91,42 @@ nav li a:hover{
 }
 
 /* Tipografia */
+
 h1{
-    color: white;
+    color: var(--color-white);
     font-weight: bold;
 }
 
 h2{
-    color: #7c25f8;
+    color: var(--color-btn-roxo);
     font-size: 3em;
     font-weight: bold;
     margin-top: 15px;
 }
 
 h3{
-    color: #7c25f8;
+    color: var(--color-btn-roxo);
     font-weight: bold;
 }
 
 h4{
-    color: white;
+    color: var(--color-white);
     font-size: 3em;
 }
 
 h5{
-    color: rgb(113, 212, 212);
+    color: var(--color-softBlue);
     font-size: 2em;
 }
 
 h6{
     text-transform: uppercase;
-    color: grey;
+    color: var(--color-grey);
     font-size: 0.8em;
 }
 
 .p-branco{
-    color: white;
+    color: var(--color-white);
 }
 
 /* Customização imagem container 3, coluna 2 */
@@ -127,19 +140,19 @@ h6{
 
 /* Rodapé */
 footer{
-    background: black;
+    background: var(--color-black);
     padding-top: 40px;
     position: relative;
 }
 
 .rodape ul li a{
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
     font-size: 0.8em;
 }
 
 .rodape ul li a:hover{
-    color: rgb(113, 212, 212);
+    color: var(--color-softBlue);
 }
 
 .icones{
